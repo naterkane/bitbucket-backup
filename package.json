@@ -4,7 +4,8 @@
   "description": "Clone all repositories from bitbucket to your local machine",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postpublish": "greenkeeper-postpublish"
   },
   "keywords": [
     "bitbucket",
@@ -16,11 +17,17 @@
     "type": "git",
     "url": "https://github.com/naterkane/getallrepos.git"
   },
+  "greenkeeper": {
+    "branchPrefix": "deps-"
+  },
   "author": "Eugene Chiriliuc <ec.developer@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "async": "^1.4.0",
     "named-argv": "^0.3.0",
     "request": "^2.59.0"
+  },
+  "devDependencies": {
+    "greenkeeper-postpublish": "/Users/naterkane1.0.1"
   }
 }
